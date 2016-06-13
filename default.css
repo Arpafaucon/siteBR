@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	min-width: 640px;
 }
 
 body {
@@ -44,41 +45,6 @@ a img {
 	border: none;
 }
 
-/* 	.image
-	{
-		display: inline-block;
-	}
-	
-		.image img
-		{
-			display: block;
-			width: 100%;
-		}
-
-	.image-full
-	{
-		display: block;
-		width: 100%;
-		margin: 0 0 2em 0;
-	}
-	
-	.image-left
-	{
-		float: left;
-		margin: 0 2em 2em 0;
-	}
-	
-	.image-centered
-	{
-		display: block;
-		margin: 0 0 2em 0;
-	}
-
-		.image-centered img
-		{
-			margin: 0 auto;
-			width: auto;
-		} */
 
 hr {
 	display: none;
@@ -96,15 +62,20 @@ hr {
 		padding: 0.25em 0.5em;
 		text-transform: none;
 		margin: 0 auto;
+		position: absolute;
+		left:20%;
 	}
 	
-	.big-title h2{
-		font-size: 2em;
+	h2.big-title{
+		font-size: 28px;
+		top:7px;
+		
 	}
 	
-	.big-title h1{
-		font-size: 3em;
+	h1.big-title{
+		font-size: 35px;
 		text-align: center;
+		top: 40px;
 	}
 
 	.title
@@ -131,50 +102,31 @@ hr {
 	
 	#header-wrapper
 	{
-		position: fixed;
+		position: relative;
 		overflow: hidden;
 		background-size: 100%;
-		padding: 0em 0em 2em 0em;
+		padding: 0em 0em 0em 0em;
 		background: #333333;
-		height: 75px;
+		height: 140px;
 		width: 100%;
 		z-index:1;
+		font-size: 13pt;
 	}
 	
-/*********************************************************************************/
-/* Logo                                                                          */
-/*********************************************************************************/
+	#logoX{
+		position: absolute;
+		float:left;
+		top: 2px;
+		left: 2px;
+		max-width:20%;
+	}
+	
 
-	#logo 
-	{
-		/* width: 500px; */
-		height: 100px;
-		margin: 0 auto;
-		padding: 2em 0em;
-		text-transform: uppercase;
-	}
-	
-	#logo h1
-	{
-		letter-spacing: 0.10em;
-		font-size: 3em;
-	}
-	
-	#logo p 
-	{
-		letter-spacing: 0.10em;
-		color: #FFF;
-	}
-	
-	#logo a 
-	{
-		text-decoration: none;
-		color: #FFF;
-	}
 
 /** WRAPPER */
 
 #wrapper {
+	width: 100%;
 	background: #FFFFFF url(images/bg01.png) repeat;
 }
 
@@ -184,7 +136,7 @@ hr {
 }
 
 .container {
-	width: 1200px;
+	/* width: 1200px; */
 	margin: 0px auto;
 }
 
@@ -218,11 +170,12 @@ hr {
 	#language
 	{
 		float:right;
-		position: relative;
-		top: -50px;
-		right: 50px;
+		position: absolute;
+		top: 10px;
+		right: 13px;
 		overflow: hidden;
 		text-align: left;
+		font-size: small;
 	}
 	
 	#language a{
@@ -248,50 +201,7 @@ hr {
 	}
 	
 
-/** MENU */
 
-#menu-wrapper
-{
-	background: #B10058;
-}
-
-#menu {
-	overflow: hidden;
-	height: 100px;
-}
-
-#menu ul {
-	margin: 0;
-	padding: 0px 0px 0px 0px;
-	list-style: none;
-	line-height: normal;
-	text-align: center;
-}
-
-#menu li {
-	display: inline-block;
-}
-
-#menu a {
-	display: block;
-	letter-spacing: 1px;
-	padding: 0px 40px;
-	text-decoration: none;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 0.80em;
-	line-height: 100px;
-	border: none;
-	color: #FFF;
-}
-
-#menu a:hover, #menu .current_page_item a {
-	text-decoration: none;
-}
-
-#menu .current_page_item a {
-	background: #C0005F;
-}
 
 /** PAGE */
 
@@ -307,7 +217,9 @@ hr {
 #content
 {
 	float: right;
-	width: 790px;
+	max-width: 70%;
+	text-align: justify;
+	margin-right: 5%;
 }
 
 /*********************************************************************************/
@@ -336,7 +248,8 @@ hr {
 	#sidebar
 	{
 		float: left;
-		width: 345px;
+		margin-left:20px;
+		max-width: 20%;
 		text-decoration : none;
 	}
 	
@@ -360,7 +273,7 @@ hr {
 	#copyright
 	{
 		overflow: hidden;
-		padding: 1em 0em;
+		padding: 5px 0em;
 		text-align: center;
 		color: #ADADAD;
 	}
@@ -379,6 +292,37 @@ hr {
 		text-decoration: none;
 		color: rgba(255,255,255,.7);
 	}
+	
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+/* 	#logo 
+	{
+		width: 500px; 
+		height: 100px;
+		margin: 0 auto;
+		padding: 2em 0em;
+		text-transform: uppercase;
+	}
+	
+	#logo h1
+	{
+		letter-spacing: 0.10em;
+		font-size: 3em;
+	}
+	
+	#logo p 
+	{
+		letter-spacing: 0.10em;
+		color: #FFF;
+	}
+	
+	#logo a 
+	{
+		text-decoration: none;
+		color: #FFF;
+	} */
 
 /*********************************************************************************/
 /* Welcome                                                                       */
@@ -510,8 +454,86 @@ hr {
 
  */
 
+ /** MENU */
 
+/* #menu-wrapper
+{
+	background: #B10058;
+}
 
+#menu {
+	overflow: hidden;
+	height: 100px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+
+#menu li {
+	display: inline-block;
+}
+
+#menu a {
+	display: block;
+	letter-spacing: 1px;
+	padding: 0px 40px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	line-height: 100px;
+	border: none;
+	color: #FFF;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+}
+
+#menu .current_page_item a {
+	background: #C0005F;
+} */
+
+/* 	.image
+	{
+		display: inline-block;
+	}
+	
+		.image img
+		{
+			display: block;
+			width: 100%;
+		}
+
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+		.image-centered img
+		{
+			margin: 0 auto;
+			width: auto;
+		} */
 
 
 
