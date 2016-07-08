@@ -1,15 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
-
-Name       : ClearFigure 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20140310
-
--->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,14 +6,16 @@ Released   : 20140310
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Chivo:400,900" rel="stylesheet" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
 <!--[if IE 6]>
 <link href="default_ie6.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 </head>
 <body>
-<div id="wrapper">
+<div id="wrapper" class="container-fluid">
+<div class="row">
 <div id="header-wrapper">
 	<img src="images/logo.png" alt="logo de l'&Eacute;cole polytechnique" id="logoX"/>
 	<h2 class="big-title">&Eacute;cole polytechnique</h2>
@@ -35,22 +26,38 @@ Released   : 20140310
 		<li><img src="images/drapeau-FR.jpg" alt="french version"/><a href="#">Fran&ccedil;ais</a></li>
 	</ul>
 	</div>
+</div></div>
+<div class="row">
+<!-- <div id="banner"></div> -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner" role="listbox">
+		<div class="item active">
+		  <img class="first-slide" src="images/banner-1.jpg" alt="First slide">
+		</div>
+		<div class="item">
+		  <img class="second-slide" src="images/banner-1.jpg" alt="Second slide">
+		</div>
+		<div class="item">
+		  <img class="third-slide" src="images/banner-1.jpg" alt="Third slide">
+	  </div>
+	  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	  </a>
+</div><!-- /.carousel -->
 </div>
-
-<div id="banner"></div>	<div id="page" class="container">
-		<div id="content">
-<section id="article-presentation">
-	<header>
-		<h2>Assister à la finale</h2>
-		<!-- <span class="byline">Sous-titre</span> -->
-	</header>
-	<p class="spectateur-adresse-ecole"> Mardi 24 janvier 2017, 20h30<br />
-	Amphith&eacute;&acirc;tre Poincar&eacute;<br />
-	&Eacute;cole polytechnique</p>
-	<p>La finale du concours de piano vous offre un concert gratuit au cours duquel trois candidats &eacute;tudiants interpr&eacute;teront chacun un concerto de Mozart accompagn&eacute;s d'un orchestre professionnel.</p>
-	<p>Durant les d&eacute;lib&eacute;rations du jury, vous participerez au vote pour attribuer le prix du public.</p>
-	<p>Pour acc&eacute;der à l'&Eacute;cole, consultez le lien suivant : <a class="spectateur-lien-acces" href="https://www.polytechnique.edu/fr/accesetorientation">se rendre à l'&Eacute;cole polytechnique</a>.</p>
-</section>		</div>
+<div class="row">
+	<div class="col-lg-3 col-md-3">
 <nav id="sidebar">
 	<section class="sidebar">
 		<img src="images/logoCP.png" alt="logo du concours de piano de l'école polytechnique" id="logoCP"/>
@@ -87,8 +94,26 @@ Released   : 20140310
 		</ul>
 	</section> -->
 </nav>	</div>
+	<div class="col-lg-offset-1 col-lg-7">
+<section id="article-presentation">
+	<header>
+		<h2>Assister à la finale</h2>
+		<!-- <span class="byline">Sous-titre</span> -->
+	</header>
+	<p class="spectateur-adresse-ecole"> Mardi 24 janvier 2017, 20h30<br />
+	Amphith&eacute;&acirc;tre Poincar&eacute;<br />
+	&Eacute;cole polytechnique</p>
+	<p>La finale du concours de piano vous offre un concert gratuit au cours duquel trois candidats &eacute;tudiants interpr&eacute;teront chacun un concerto de Mozart accompagn&eacute;s d'un orchestre professionnel.</p>
+	<p>Durant les d&eacute;lib&eacute;rations du jury, vous participerez au vote pour attribuer le prix du public.</p>
+	<p>Pour acc&eacute;der à l'&Eacute;cole, consultez le lien suivant : <a class="spectateur-lien-acces" href="https://www.polytechnique.edu/fr/accesetorientation">se rendre à l'&Eacute;cole polytechnique</a>.</p>
+</section>	</div>
 </div>
-<div id="copyright" class="container">
+<div class="row"></div>
+<div class="row">
+<div id="copyright">
 	Design: <a href="http://templated.co">TEMPLATED</a>. R&eacute;alis&eacute; par les &eacute;l&egrave;ves de l'&Eacute;cole polytechnique.
-</div></body>
+</div></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
 </html>
