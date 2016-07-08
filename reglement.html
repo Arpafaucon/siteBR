@@ -6,7 +6,8 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Chivo:400,900" rel="stylesheet" />
-<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- <link href="css/bootstrap-theme.css" rel="stylesheet"> -->
 <link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
 <!--[if IE 6]>
@@ -29,61 +30,66 @@
 </div></div>
 <div class="row">
 <!-- <div id="banner"></div> -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="CarouselBanner" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
-	  <ol class="carousel-indicators">
+<!-- 	  <ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		<li data-target="#myCarousel" data-slide-to="1"></li>
 		<li data-target="#myCarousel" data-slide-to="2"></li>
-	  </ol>
-	  <div class="carousel-inner" role="listbox">
+	  </ol> -->
+	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-		  <img class="first-slide" src="images/banner-1.jpg" alt="First slide">
+		  <img class="first-slide img-responsive" src="images/banner-1.jpg" alt="First slide">
 		</div>
 		<div class="item">
-		  <img class="second-slide" src="images/banner-1.jpg" alt="Second slide">
+		  <img class="second-slide img-responsive" src="images/banner-2r.jpg" alt="Second slide">
 		</div>
 		<div class="item">
-		  <img class="third-slide" src="images/banner-1.jpg" alt="Third slide">
+		  <img class="third-slide img-responsive" src="images/banner-3r.jpg" alt="Third slide">
 	  </div>
-	  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	  <a class="left carousel-control" href="#CarouselBanner" role="button" data-slide="prev">
 		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 		<span class="sr-only">Previous</span>
 	  </a>
-	  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	  <a class="right carousel-control" href="#CarouselBanner" role="button" data-slide="next">
 		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	  </a>
-</div><!-- /.carousel -->
+	</div><!-- /.carousel -->
+</div>
 </div>
 <div class="row">
-	<div class="col-lg-3 col-md-3">
+	<div class="col-md-2">
 <nav id="sidebar">
-	<section class="sidebar">
-		<img src="images/logoCP.png" alt="logo du concours de piano de l'école polytechnique" id="logoCP"/>
-	</section>
-	<section class="sidebar">
-		<header>
-			<h2>Le Concours</h2>
-		</header>
-		<ul class="style1">
-			<li><a href="presentation.html">Pr&eacute;sentation</a></li>
-			<li><a href="reglement.html">R&egrave;glement</a></li>
-			<li><a href="palmares.html">Palmar&egrave;s</a></li>
-			<li><a href="sponsors.html">Sponsors</a></li>
-		</ul>
-	</section>
-	<section class="sidebar">
-		<header>
-			<h2>Edition 2017</h2>
-		</header>
-		<ul class="style1">
-			<li><a href="programme.html">Programme du concours 2016</a></li>
-			<li><a href="calendrier.html">Calendrier</a></li>
-			<li><a href="contact.html">S'inscrire</a></li>
-			<li><a href="finale.html">Pour les spectateurs</a></li>
-		</ul>
-	</section>
+	<div class="row">
+		<section class="sidebar">
+			<img src="images/logoCP.png" alt="logo du concours de piano de l'école polytechnique" id="logoCP"/>
+		</section>
+		<section class="sidebar">
+			<header>
+				<h2>Le Concours</h2>
+			</header>
+			<ul class="style1">
+				<li><a href="presentation.html">Pr&eacute;sentation</a></li>
+				<li><a href="reglement.html">R&egrave;glement</a></li>
+				<li><a href="palmares.html">Palmar&egrave;s</a></li>
+				<li><a href="sponsors.html">Sponsors</a></li>
+			</ul>
+		</section>
+	</div>
+	<div class="row">
+		<section class="sidebar">
+			<header>
+				<h2>Edition 2017</h2>
+			</header>
+			<ul class="style1">
+				<li><a href="programme.html">Programme du concours 2017</a></li>
+				<li><a href="calendrier.html">Calendrier</a></li>
+				<li><a href="contact.html">S'inscrire</a></li>
+				<li><a href="finale.html">Pour les spectateurs</a></li>
+			</ul>
+		</section>
+	</div>
 <!-- 	<section class="sidebar">
 		<header>
 			<h2>Langue du site</h2>
@@ -94,7 +100,7 @@
 		</ul>
 	</section> -->
 </nav>	</div>
-	<div class="col-lg-offset-1 col-lg-7">
+	<div class="article col-md-offset-1 col-md-8">
 <section id="article-reglement">
 	<header>
 		<h2 class="title">R&egrave;glement</h2>
@@ -137,7 +143,6 @@
 	<p><em>Article 15:	</em>Toute inscription pour le concours est définitive. Ainsi, les candidats qui se désisteraient ne peuvent prétendre à un remboursement.		  </div>
 </section>	</div>
 </div>
-<div class="row"></div>
 <div class="row">
 <div id="copyright">
 	Design: <a href="http://templated.co">TEMPLATED</a>. R&eacute;alis&eacute; par les &eacute;l&egrave;ves de l'&Eacute;cole polytechnique.
