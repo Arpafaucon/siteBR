@@ -1,6 +1,6 @@
 html, body {
 	height: 100%;
-	min-width: 640px;
+	/* min-width: 640px; */
 }
 
 body {
@@ -50,9 +50,9 @@ hr {
 	display: none;
 }
 
-.article{
-	font-size: 1em;
-	word-wrap: break-words;
+article{
+	font-size: 13pt;
+	word-wrap: break-word;
 }
 
 
@@ -326,7 +326,7 @@ hr {
 /*********************************************************************************/
 
 #article-sponsors{
-	line-height: big;
+	/*line-height: big;*/
 	padding-right: 70%;
 }
 
