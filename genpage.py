@@ -13,7 +13,7 @@ Created on Thu Jun  9 23:44:09 2016
 
 def create(s):
 	struct = open("st/struct.html","r")
-	filename=["header2",s,"sidebar","footer"]
+	filename=["header","banner","sidebar",s,"footer"]
 	target = open(s+".html","w")
 	str_struct = struct.readlines()
 	for st in str_struct:
