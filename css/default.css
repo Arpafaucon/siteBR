@@ -86,8 +86,9 @@ article{
 
 	.title
 	{
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 		text-transform: uppercase;
+		margin-top: 1em;
 	}
 
 	.title h2
