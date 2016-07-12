@@ -145,10 +145,6 @@ article{
 	background: #FFFFFF url(images/bg01.png) repeat;
 }
 
-#footer-wrapper
-{
-	background: #0F0F0F;
-}
 
 .container {
 	/* width: 1200px; */
@@ -203,18 +199,6 @@ article{
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
-
-/* 	#banner 
-	{
-		overflow: hidden;
-		height: 440px;
-		background: url(../images/dupont3.jpg) no-repeat center;
-		background-size: cover;
-	}
-	
-	#banner .image
-	{
-	} */
 	
 	#CarouselBanner{
 		margin-bottom: 15px;
@@ -229,23 +213,6 @@ article{
 
 /** PAGE */
 
-/* #page
-{
-	position: relative;
-	overflow: hidden;
-	padding: 6em 0em 5em 0em;
-}
-
-/** CONTENT */
-
-/* #content
-{
-	float: right;
-	max-width: 70%;
-	text-align: justify;
-	margin-right: 5%;
-}
- */
 /*********************************************************************************/
 /* Sidebar                                                                       */
 /*********************************************************************************/
@@ -271,7 +238,7 @@ article{
 	
 	#sidebar
 	{
-		float: left;
+		/*float: left;*/
 		margin-left:20px;
 		max-width: 20%;
 		text-decoration : none;
@@ -301,18 +268,12 @@ article{
 	#copyright
 	{
 		overflow: hidden;
-		padding: 5px 0em;
+		padding: 3px 0em;
 		text-align: center;
 		color: #ADADAD;
 		background-color: #363636;
-	}
-	
-	#copyright p
-	{
-		letter-spacing: 0.20em;
 		text-align: center;
-		text-transform: uppercase;
-		font-size: 0.80em;
+		font-size: 0.75em;
 		color: rgba(255,255,255,.5);
 	}
 	
@@ -322,6 +283,11 @@ article{
 		color: rgba(255,255,255,1);
 	}
 	
+	#footer-wrapper
+	{
+		background: #0F0F0F;
+	}
+
 /*********************************************************************************/
 /* Contact                                                                        */
 /*********************************************************************************/
@@ -338,6 +304,10 @@ article{
 #article-sponsors{
 	/*line-height: big;*/
 	padding-right: 70%;
+}
+
+#article-sponsors img{
+	width: 100%;
 }
 
 
