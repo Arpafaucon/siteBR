@@ -88,7 +88,7 @@ article{
 	{
 		margin-bottom: 1em;
 		margin-top: 1em;
-		font-family: 'Chivo', sans-serif;
+		font-family: 'Comic Sans MS', 'Chivo', sans-serif;
 	}
 
 	.title h2
@@ -302,13 +302,16 @@ article{
 /*********************************************************************************/
 
 #article-sponsors{
-	/*line-height: big;*/
-	padding-right: 70%;
+	
+}
+/* 
+#article-sponsors a {
+	display: flex;
 }
 
-#article-sponsors img{
-	width: 100%;
-}
+#article-sponsors a img{
+	margin: auto;
+} */
 
 /*********************************************************************************/
 /* Palmarès                                                                     */
