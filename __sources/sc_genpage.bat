@@ -1,0 +1,2 @@
+python genpage.py
+pause

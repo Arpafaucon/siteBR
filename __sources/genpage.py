@@ -32,7 +32,7 @@ def create(s, eng=False):
 	return
 
 def gensite():
-	lpage = ["presentation","reglement","palmares","sponsors","programme","calendrier","contact","finale"]
+	lpage = ["index","reglement","palmares","sponsors","programme","calendrier","contact","finale"]
 	for page in lpage:
 		create(page)
 		create(page, True)
